@@ -33,8 +33,8 @@ app.post('/create-checkout-session', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: 'https://slasticarna.onrender/home',
-    cancel_url: 'https://slasticarna.onrender/home',
+    success_url: 'https://slasticarna.onrender.com/success',
+    cancel_url: 'https://slasticarna.onrender.com/home',
   });
 
   res.json({ id: session.id });

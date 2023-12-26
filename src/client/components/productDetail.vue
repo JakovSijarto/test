@@ -35,14 +35,14 @@
                     </div>
                     <button @click="removeFromCart(selectedProduct.id)"  class=" border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold max-[420px]:mt-[10px] ml-8">Makni iz korpe</button>
                 </li>
-                <button @click="addToCart()" class=" border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold max-[420px]:mt-[10px] mr-4">Add To Cart</button>
+                <button @click="addToCart()" class=" border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold max-[420px]:mt-[10px] mr-4">Dodaj u korpu</button>
                 <button @click="router.push({ name: 'korpa' })" class=" border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold  max-[420px]:mt-[10px] ">KORPA</button>
             </div>
         </div>
     </div>
     <div class="w-full flex justify-center items-center">
     <div class="flex w-[1350px]">
-      <p class="uppercase my-[20px] pl-8 text-[#3d3d3d] mulifont tracking-[.1em] max-[460px]:mt-16 max-[460px]:text-[20px]">related products</p>
+      <p class="uppercase my-[20px] pl-8 text-[#3d3d3d] mulifont tracking-[.1em] max-[460px]:mt-16 max-[460px]:text-[20px]">Slični proizvodi</p>
     </div>
   </div>
 

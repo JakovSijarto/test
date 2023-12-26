@@ -8,7 +8,7 @@ import kontakt from "../components/kontakt.vue"
 import korpa from "../components/korpa.vue"
 import productDetails from "../components/productDetail.vue"
 import NotFound from "../components/404.vue"
-
+import success from "../components/success.vue"
 
 const routes = [
     {
@@ -37,6 +37,11 @@ const routes = [
         path: '/korpa',
         name:'korpa',
         component: korpa
+    },
+    {
+        path: '/success',
+        name:'success',
+        component: success
     },
     {
         path:'/product/:id',

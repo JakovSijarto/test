@@ -9,8 +9,8 @@
     <div>
         <div class="w-full flex justify-center items-center py-[60px] ">
             <div class="flex justify-between w-[1300px] text-[#989898] mx-8 max-[520px]:flex-col max-[520px]:gap-[1em]">
-            <div class="">
-                <p class="mulifont uppercase tracking-[.1em]">showing all {{ store.products.length }} results</p>
+            <div>
+                <p class="mulifont uppercase tracking-[.1em]">Svih {{ store.products.length }} produkta</p>
             </div>
             <select
     id="sort"
@@ -18,9 +18,9 @@
     @change="sortProducts"
     class="border p-4"
   >
-    <option value="default">Default</option>
-    <option value="highest">Highest Price</option>
-    <option value="lowest">Lowest Price</option>
+    <option value="default">Normalno</option>
+    <option value="highest">Najveca cena</option>
+    <option value="lowest">Najniža cena</option>
   </select>
         </div>
         </div>
