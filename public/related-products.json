@@ -1,0 +1,128 @@
+{  "relatedProducts": [
+    {
+      "id": 0,
+      "thumbnail": "./torta/0/id0.webp",
+      "name": "ČOKOLADNA SLADOLED TORTA",
+      "price":4600
+    },
+    {
+      "id": 1,
+      "thumbnail": "./torta/1/id0.webp",
+      "name": "LEŠNIK TORTA",
+      "price":4350
+    },
+    {
+      "id": 2,
+      "thumbnail": "./torta/2/id0.webp",
+      "name": "PRESNA TORTA SA MALINAMA",
+      "price":4500
+    },
+    {
+      "id": 3,
+      "thumbnail": "./torta/3/id0.webp",
+      "name": "SLADOLED SENDVIČ SA KARAMELOM",
+      "price":4600
+    },
+    {
+      "id": 4,
+      "thumbnail": "./torta/4/id0.webp",
+      "name": "ŠUMSKA TORTA",
+      "price":4350
+    },
+    {
+      "id": 5,
+      "thumbnail": "./torta/5/id0.webp",
+      "name": "TORTA SA KAMILICOM I LIMUNOM",
+      "price":4600
+    },
+    {
+      "id": 6,
+      "thumbnail": "./torta/6/id0.webp",
+      "name": "TORTA SA ŠUMSKIM JAGODAMA",
+      "price":4600
+    },
+    {
+      "id": 7,
+      "thumbnail": "./torta/7/id0.webp",
+      "name": "TORTA SA TRI ČOKOLADE",
+      "price":4600
+    },
+    {
+      "id":8,
+      "thumbnail": "./poklonkutije/0/id0.webp",
+      "name": "MALO DIVLJE BILJE",
+      "price":1850
+    },
+    {
+      "id": 9,
+      "thumbnail": "./poklonkutije/1/id0.webp",
+      "name": "MALO PROLEĆE / MALA JESEN",
+      "price":1850
+    },
+    {
+      "id": 10,
+      "thumbnail": "./poklonkutije/2/id0.webp",
+      "name": "VELIKO DIVLJE BILJE",
+      "price":3150
+    },
+    {
+      "id": 11,
+      "thumbnail": "./poklonkutije/3/id0.webp",
+      "name": "PAKETIĆI ČOKOLADICA",
+      "price":390
+    },
+    {
+      "id": 12,
+      "thumbnail": "./poklonkutije/4/id0.webp",
+      "name": "VELIKO PROLEĆE / VELIKA JESEN",
+      "price":2850
+    },
+    {
+      "id": 13,
+      "thumbnail": "./kolacinakomad/0/id0.webp",
+      "name": "ČOKOLADNI MUS SA MALINAMA",
+      "price":450
+    },
+    {
+      "id": 14,
+      "thumbnail": "./kolacinakomad/1/id0.webp",
+      "name": "KOCKE SA PISTAĆIMA",
+      "price":430
+    },
+    {
+      "id": 15,
+      "thumbnail": "./kolacinakomad/2/id0.webp",
+      "name": "KREM OD BELE I MLEČNE ČOKOLADE",
+      "price":450
+    },
+    {
+      "id": 16,
+      "thumbnail": "./kolacinakomad/3/id0.webp",
+      "name": "LIJA",
+      "price":430
+    },
+    {
+      "id": 17,
+      "thumbnail": "./kolacinakomad/4/id0.webp",
+      "name": "MEDVEĐI KEKS",
+      "price":230
+    },
+    {
+      "id": 18,
+      "thumbnail": "./kolacinakomad/5/id0.webp",
+      "name": "ROGAČ KOLAČ SA VIŠNJAMA",
+      "price":450
+    },
+    {
+      "id": 19,
+      "thumbnail": "./kolacinakomad/6/id0.webp",
+      "name": "ŠUMA KOLAČ",
+      "price":240
+    },
+    {
+      "id": 20,
+      "thumbnail": "./kolacinakomad/7/id0.webp",
+      "name": "ŠUMSKI MAK",
+      "price":450
+    }
+  ]}

@@ -1,0 +1,107 @@
+{"products":[
+    {
+      "id": 0,
+      "thumbnail": "./kolacinakomad/0/id0.webp",
+      "images":["./kolacinakomad/0/id1.webp","./kolacinakomad/0/id2.webp","./kolacinakomad/0/id0.webp"],
+      "name": "ČOKOLADNI MUS SA MALINAMA",
+      "category": "torte",
+      "price":450,
+      "description":"Mus od crne čokolade sa malinom i pečenim, lomljenim bademima",
+      "sastav":"crna čokolada (kakao, kakao puter, šećer, soja lecitin, vanila), puter, jaja, slatka pavlaka, malina, med, badem",
+      "podebljano":"Bez glutena.",
+      "Alergeni":"orašasto voće, bobičasto voće, mleko, soja lecitin.",
+      "quantity":0
+    },
+    {
+      "id": 1,
+      "thumbnail": "./kolacinakomad/1/id0.webp",
+      "images":["./kolacinakomad/1/id1.webp","./kolacinakomad/1/id2.webp","./kolacinakomad/1/id3.webp"],
+      "name": "KOCKE SA PISTAĆIMA",
+      "category": "torte",
+      "price":430,
+      "description":"Bela Callebaut čokolada bez šećera mešana sa puterom od pistaća, glazura od crne Callebaut čokolade bez šećera i seckani pečeni pistaći.",
+      "sastav":"pistaći, bela i crna Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, mleko u prahu, soja lecitin, vanila), neutralna pavlaka",
+      "podebljano":"Bez glutena, zaslađene čokoladom sa maltitolom.",
+      "Alergeni":"orašasto voće, mleko, soja lecitin",
+      "quantity":0
+    },
+    {
+      "id": 2,
+      "thumbnail": "./kolacinakomad/2/id0.webp",
+      "images":["./kolacinakomad/2/id0.webp","./kolacinakomad/2/id1.webp","./kolacinakomad/2/id2.webp"],
+      "name": "KREM OD BELE I MLEČNE ČOKOLADE",
+      "category": "torte",
+      "price":450,
+      "description":"Krem od bele i mlečne čokolade sa slankastim puterom od badema",
+      "sastav":"mlečna i bela Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, mleko u prahu, vanila), badem, ječmeni slad, neutralna pavlaka, so",
+      "podebljano":"Zaslađeno čokoladom sa maltitolom.",
+      "Alergeni":"orašasto voće, mleko, soja lecitin, gluten",
+      "quantity":0
+    },
+    {
+      "id": 3,
+      "thumbnail": "./kolacinakomad/3/id0.webp",
+      "images":["./kolacinakomad/3/id1.webp","./kolacinakomad/3/id0.webp","./kolacinakomad/3/id1.webp"],
+      "name": "LIJA",
+      "category": "torte",
+      "price":430,
+      "description":"Štangle sa liofilizovanim jagodama i sušenim višnjama",
+      "sastav":"liofilizovane jagode, sušene višnje, indijski orah, kakao puter, kokosovo ulje, badem, ječmeni slad, ovas",
+      "podebljano":"Zaslađena ječmenim sladom; veganska/posna",
+      "Alergeni":"orašasto voće, ječmeni slad, jagoda, gluten",
+      "quantity":0
+    },
+    {
+      "id": 4,
+      "thumbnail": "./kolacinakomad/4/id0.webp",
+      "images":["./kolacinakomad/4/id0.webp","./kolacinakomad/4/id0.webp","./kolacinakomad/4/id0.webp"],
+      "name": "MEDVEĐI KEKS",
+      "category": "torte",
+      "price":230,
+      "description":"Keks sa brusnicama, lešnicima i čokoladom, sa dve vrste integralnog brašna.",
+      "sastav":"čokolada (kakao, kakao puter, šećer, soja lecitin, vanila), lešnik, brusnice, ječmeni slad, ražano brašno, pšenično integralno brašno, jaja, maslac, biljna mast, soda, so",
+      "podebljano":"Zaslađen ječmenim sladom i crnom čokoladom sa šećerom.",
+      "Alergeni":"orašasto voće, ražano brašno, pšenično integralno brašno, mleko, soja lecitin, gluten, brusnice",
+      "quantity":0
+    },
+    {
+      "id": 5,
+      "thumbnail": "./kolacinakomad/5/id0.webp",
+      "images":["./kolacinakomad/5/id1.webp","./kolacinakomad/5/id2.webp","./kolacinakomad/5/id3.webp"],
+      "name": "ROGAČ KOLAČ SA VIŠNJAMA",
+      "category": "torte",
+      "price":450,
+      "description":"Pečeni kolač od rogača sa svežim jabukama, limunom, pomorandžama i višnjama, preliven rastopljenom čokoladom bez šećera.",
+      "sastav":"rogač, sveže jabuke, limun, pomorandža, mineralna voda, ječmeni slad, psilijum, speltino brašno, soda bikarbona, kakao, rum, višnje, crna Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, vanila), suncokretovo hladno ceđeno ulje",
+      "podebljano":"Veganski/posno, zaslađen ječmenim sladom",
+      "Alergeni":"limun, ječmeni slad, soja lecitin, žitarice, gluten",
+      "quantity":0
+    },
+    {
+      "id": 6,
+      "thumbnail": "./kolacinakomad/6/id0.webp",
+      "images":["./kolacinakomad/6/id1.webp","./kolacinakomad/6/id2.webp","./kolacinakomad/6/id3.webp"],
+      "name": "ŠUMA KOLAČ",
+      "category": "torte",
+      "price":240,
+      "description":"Kolač sa svežim jabukama i celim voćem: suvim šljivama, suvim kajsijama, celim lešnicima i orasima.",
+      "sastav":"suve šljive, suve kajsije, jezgro oraha, lešnici, suvo grožđe, rum, kakao, cimet, ječmeni slad, soda, speltino brašno, sveže jabuke",
+      "podebljano":"Veganski/posno, zaslađen ječmenim sladom.",
+      "Alergeni":"orašasto voće, ječmeni slad, žitarice, gluten",
+      "quantity":0
+    },
+    {
+      "id": 7,
+      "thumbnail": "./kolacinakomad/7/id0.webp",
+      "images":["./kolacinakomad/7/id1.webp","./kolacinakomad/7/id2.webp","./kolacinakomad/7/id3.webp"],
+      "name": "ŠUMSKI MAK",
+      "category": "torte",
+      "price":450,
+      "description":"Kremasti kolač sa makom, bananama i čia semenkama, sa svežim malinama i kupinama i puno krckavog lešnika.",
+      "sastav":"mak, čia semenke, banana, kokos, limun, suncokret, urme, soda bikarbona, psilijum, kupina, malina, vanila, kakao, so, lešnik, suncokretovo hladno ceđeno ulje",
+      "podebljano":"Veganski/posan, zaslađen urmama i bananama, bez glutena",
+      "Alergeni":"orašasto voće, kupina, malina, limun",
+      "quantity":0
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{"products":[
+    {
+      "id": 8,
+      "thumbnail": "./poklonkutije/0/id0.webp",
+      "images":["./poklonkutije/0/id1.webp","./poklonkutije/0/id2.webp","./poklonkutije/0/id3.webp"],
+      "name": "MALO DIVLJE BILJE",
+      "category": "torte",
+      "price":1850,
+      "description":"Kutija sa 4 vrste čokoladica: Slatko-slano-ljuti bademi u crnoj čokoladi sa morskom solju. Crna čokolada sa pimentom, šarenim biberom i malinom Crna čokolada sa klekom i malinom. Crna čokolada sa bademima, lešnicima, pistaćima, granolom i korijanderom",
+      "sastav":"crna Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, vanila), malina, čili, badem, morska so, piment, šareni biber, kleka, lešnik, badem, ovsene pahuljice, suncokret, ječmeni slad, korijander, cimet",
+      "podebljano":"Bez šećera, veganski/posno",
+      "Alergeni":"orašasto voće, bobičasto voće, soja lecitin",
+      "quantity":0
+    },
+    {
+      "id": 9,
+      "thumbnail": "./poklonkutije/1/id0.webp",
+      "images":["./poklonkutije/1/id1.webp","./poklonkutije/1/id2.webp","./poklonkutije/1/id3.webp"],
+      "name": "MALO PROLEĆE / MALA JESEN",
+      "category": "torte",
+      "price":1850,
+      "description":"Kutija sa 6 vrsta čokoladica: Bela čokolada sa malinama, kokosom i čia semenkama. Bela čokolada sa jagodama, limun travom i moringom. Bela čokolada sa bosiljkom i kupinom. Slatko-slano-ljuti bademi u crnoj čokoladi sa morskom solju. Crna čokolada sa pimentom, šarenim biberom i malinom. Mlečna čokolada sa žalfijom i kajsijom",
+      "sastav":"crna, mlečna i bela Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, mleko u prahu, vanila), malina, kokos, čia semenke, čili, badem, morska so, jagode, moringa prah, limun trava, piment, biber, bosiljak, kupina",
+      "podebljano":"Čokolada zaslađena maltitolom.",
+      "Alergeni":"orašasto voće, bobičasto voće, mleko, soja lecitin",
+      "quantity":0
+    },
+    {
+      "id": 10,
+      "thumbnail": "./poklonkutije/2/id0.webp",
+      "images":["./poklonkutije/2/id0.webp","./poklonkutije/2/id1.webp","./poklonkutije/2/id0.webp"],
+      "name": "VELIKO DIVLJE BILJE",
+      "category": "torte",
+      "price":3150,
+      "description":"Kutija sa 6 vrsta čokoladica: Cvetovi hibiskusa u beloj čokoladi. Bela čokolada sa bosiljkom i kupinom. Crna čokolada sa klekom i malinom. Crna čokolada sa semenom konoplje, ljutom paprikom, origanom i solju. Mlečna čokolada sa žalfijom i kajsijom. Mlečna čokolada sa vrganjima, majčinom dušicom i pahuljicama heljde",
+      "sastav":"crna, mlečna i bela Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, mleko u prahu, vanila), cvetovi hibiskusa, bosiljak, kupina, kleka, malina, seme konoplje, so, ljuta paprika, origano, žalfija, kajsija, vrganj, majčina dušica, pahuljice heljde",
+      "podebljano":"Čokolada zaslađena maltitolom.",
+      "Alergeni":"orašasto voće, bobičasto voće, mleko, soja lecitin",
+      "quantity":0
+    },
+    {
+      "id": 11,
+      "thumbnail": "./poklonkutije/3/id0.webp",
+      "images":["./poklonkutije/3/id1.webp","./poklonkutije/3/id2.webp","./poklonkutije/3/id0.webp"],
+      "name": "PAKETIĆI ČOKOLADICA",
+      "category": "torte",
+      "price":390,
+      "description":"Mešavina čokoladica: Bela čokolada sa hibiskusom i pistaćima. Bela čokolada sa malinom, kokosom i čija semenkama. Bela čokolada sa cimetom, đumbirom i pirinčanim pahuljicama. Bela čokolada sa jagodama, moringom i limun travom. Mlečna čokolada sa anisom/komoračem, bademima i lešnicima. Crna čokolada sa pimentom, biberom i malinom. Crna čokolada sa bademom, lešnikom, pistaćima, granolom i korijanderom.",
+      "sastav":"crna, mlečna i bela Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, mleko u prahu, vanila), malina, kokos, čia semenke, badem, lešnik, anis/komorač, hibiskus, pistaći, jagode, moringa prah, limun trava, piment, biber, granola (suncokret, ovsene pahuljice, ječmeni slad, hladno ceđeno suncokretovo ulje), korijander",
+      "podebljano":"Čokolada zaslađena maltitolom.",
+      "Alergeni":"orašasto voće, bobičasto voće, mleko, soja lecitin",
+      "quantity":0
+    },
+    {
+      "id": 12,
+      "thumbnail": "./poklonkutije/4/id0.webp",
+      "images":["./poklonkutije/4/id1.webp","./poklonkutije/4/id2.webp","./poklonkutije/4/id3.webp"],
+      "name": "VELIKO PROLEĆE / VELIKA JESEN",
+      "category": "torte",
+      "price":2850,
+      "description":"Kutija sa 9 vrsta čokoladica: Bela čokolada sa pistaćima i cvetovima hibiskusa. Bela čokolada sa mača prahom, pirinčanim pahuljicama i crnim i belim susamom. Bela čokolada sa malinama, kokosom i cia semenkama. Bela čokolada sa đumbirom, cimetom i pirinčanim pahuljicama. Bela čokolada sa jagodama, limun travom i moringom. Crna čokolada sa bademima, lešnicima, pistaćima, granolom i korijanderom. Slatko-slano-ljuti bademi u crnoj čokoladi sa morskom solju. Crna čokolada sa pimentom, šarenim biberom i malinom. Mlečna čokolada sa komoračem, bademima i lešnicima",
+      "sastav":"crna, mlečna i bela Callebaut čokolada bez šećera (kakao, kakao puter, maltitol, soja lecitin, mleko u prahu, vanila), malina, kokos, čia semenke, mača prah, ekspandiarni pirinač, crni i beli susam, cimet, đumbir, pirinčane pahuljice, čili, badem, pistaći, cvet hibiskusa, lešnik, korijander, suncokret, morska so, anis/komorač, jagode, moringa, limun trava, piment, biber",
+      "podebljano":"Čokolada zaslađena maltitolom.",
+      "Alergeni":"orašasto voće, bobičasto voće, mleko, soja lecitin",
+      "quantity":0
+    }
+  ]
+}
