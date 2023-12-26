@@ -4,7 +4,7 @@ import cors from 'cors';
 import ViteExpress from "vite-express";
 
 const app = express();
-const stripeClient = Stripe("sk_test_51MFvJjGp8AV7HwpgNwwtOwrdddWVOUgT8geaoYasK9hgRUVgBbmxiidWcTslDnACcKElJBfpJ5Qvm4HutsGsnhzS00cIhYeEJP");
+const stripeClient = Stripe("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");
 
 
 app.use(cors());
