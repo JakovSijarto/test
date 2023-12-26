@@ -6,13 +6,7 @@ import ViteExpress from "vite-express";
 const app = express();
 const stripeClient = Stripe("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");
 
-
-app.use(cors());
-const corsOptions = {
-  origin: '*',
-};
-
-app.use(cors(corsOptions));
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 
 app.post('/create-checkout-session', async (req, res) => {

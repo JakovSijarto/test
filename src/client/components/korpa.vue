@@ -60,6 +60,7 @@
 import { useProductsStore } from "../store/products_kolaci";
 import { useRouter } from "vue-router";
 import { ref, onMounted } from 'vue';
+import { loadStripe as stripeLoader } from '@stripe/stripe-js/pure';
 
 const store = useProductsStore()
 const cart = ref(store.cart);
@@ -111,9 +112,12 @@ let stripe = null;
 let customPrice = 0; // Initialize customPrice
 
 const loadStripe = async () => {
-  const { loadStripe } = await import('@stripe/stripe-js');
-  stripe = await loadStripe(import.meta.env.VITE_APP_STRIPE_KEY_PUBLISHABLE);
-  console.log('Stripe API key:', stripe);
+  try {
+    stripe = await stripeLoader(import.meta.env.VITE_APP_STRIPE_KEY_PUBLISHABLE);
+    console.log('Stripe API key:', import.meta.env.VITE_APP_STRIPE_KEY_PUBLISHABLE);
+  } catch (error) {
+    console.error('Error loading Stripe:', error);
+  }
 };
 
 const checkout = async () => {
