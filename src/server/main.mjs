@@ -8,8 +8,12 @@ const stripeClient = Stripe("sk_live_51MFvJjGp8AV7Hwpgngat2eK3zQUO8ieDmTeoJb9sWu
 
 
 app.use(cors());
+const corsOptions = {
+  origin: '*',
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
 
 app.post('/create-checkout-session', async (req, res) => {
   const { price, productName } = req.body;
@@ -29,8 +33,8 @@ app.post('/create-checkout-session', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: 'http://localhost:3000/home',
-    cancel_url: 'http://localhost:3000/home',
+    success_url: 'https://slasticarna.onrender/home',
+    cancel_url: 'https://slasticarna.onrender/home',
   });
 
   res.json({ id: session.id });
