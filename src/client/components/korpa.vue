@@ -129,7 +129,7 @@ const checkout = async () => {
     // Calculate total amount dynamically
     customPrice = calculateTotalAmount();
 
-    const response = await fetch('http://localhost:3000/create-checkout-session', {
+    const response = await fetch('/create-checkout-session', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ const checkout = async () => {
         price: customPrice,
         productName,
       }),
-    });
+    } );
 
     const session = await response.json();
 
