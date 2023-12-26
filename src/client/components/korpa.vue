@@ -112,7 +112,7 @@ let customPrice = 0; // Initialize customPrice
 
 const loadStripe = async () => {
   const { loadStripe } = await import('@stripe/stripe-js');
-  stripe = await loadStripe("pk_test_51MFvJjGp8AV7HwpgrgahJzd6q0NbRKEsZomUODXOM8kbdgNTaubWhDUXqaCGEw6eFROfmOE97YXg6PW6Prnkb56G00ZsBI6ahj");
+  stripe = await loadStripe(import.meta.env.VITE_APP_STRIPE_KEY_PUBLISHABLE);
   console.log('Stripe API key:', stripe);
 };
 
