@@ -75,7 +75,7 @@
         <div class="pb-2 mulifont text-[19px] pt-4" >*Za tortu (ako imate)</div>
       <div class="flex justify-between max-[770px]:gap-[1em] max-[480px]:flex-col max-[480px]:gap-[1em]">
         <select class="mb-[18px] max-[480px]:mb-[5px] h-[46px] bg-[#c4b4a7] border border-[white] py-[6px] px-[22px] text-[15px] w-[50%] text-white rounded-[5px] max-[480px]:w-full" placeholder="" name="velicina_torte" v-model="velicina_torte">
-                <option disabled selected class="pb-2 mulifont text-[19px]">Veličina torte*</option>
+              <option disabled selected value="" class="pb-2 mulifont text-[19px] text-gray-500">Veličina torte*</option>
                 <option class="pb-2 mulifont text-[19px]">1 kg</option>
                 <option class="pb-2 mulifont text-[19px]">1.5 kg</option>
                 <option class="pb-2 mulifont text-[19px]">2 kg</option>
@@ -100,19 +100,19 @@
           <label for="birthday" class="pb-2 mulifont text-[19px]">Za kada želite naručiti:</label>
           <input type="date" class="border p-2 ml-4" required name="za_kada" v-model="za_kada">
       </div>
-      <select class="mb-[18px] h-[46px] bg-[#c4b4a7] border w-[50%] border-[white] py-[6px] px-[22px] text-[15px] text-white rounded-[5px] max-[480px]:w-full" placeholder="" required name="zona_dostave" v-model="zona_dostave">
-                <option disabled selected class="pb-2 mulifont text-[19px]" >Izaberite zonu dostave*</option>
-                <option class="pb-2 mulifont text-[19px]">1. zona (5km) + 500rsd</option>
-                <option class="pb-2 mulifont text-[19px]">2. zona (10km) + 1000rsd</option>
-                <option class="pb-2 mulifont text-[19px]">3. zona (15km) + 1500rsd</option>
-            </select>
+      <select class="mb-[18px] h-[46px] bg-[#c4b4a7] border w-[50%] border-[white] py-[6px] px-[22px] text-[15px] text-white rounded-[5px] max-[480px]:w-full" required name="zona_dostave" v-model="zona_dostave">
+        <option disabled selected value="" class="pb-2 mulifont text-[19px] text-gray-500">Izaberite zonu dostave*</option>
+    <option value="1" class="pb-2 mulifont text-[19px]">1. zona (5km) + 500rsd</option>
+    <option value="2" class="pb-2 mulifont text-[19px]">2. zona (10km) + 1000rsd</option>
+    <option value="3" class="pb-2 mulifont text-[19px]">3. zona (15km) + 1500rsd</option>
+</select>
       </div>
       <div class="flex justify-between py-8 gap-[1em] max-[480px]:flex-col max-[480px]:gap-[1em]">
         <div class="flex flex-col w-[100%]" v-if="!agreeTerms2">
           <Label class="mulifont text-[19px]">Adresa:</Label>
           <input type="text" class="border h-[30px] pl-2" required name="adresa" v-model="adresa">
         </div>
-        <button @click="checkout" class="border mulifont tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold w-full">Plati Sada</button>
+        <button @click="checkout" type="submit" :disabled="!isFormValid" class="border mulifont tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold w-full">Plati Sada</button>
       </div>
       </div>
     </form>
@@ -247,6 +247,16 @@ export default {
       adresa:""
     };
   },
+  computed: {
+    isFormValid() {
+      return (
+        this.ime.trim() !== "" &&
+        this.prezime.trim() !== "" &&
+        this.telefon.trim() !== "" &&
+        this.mail.trim() !== ""
+      );
+    },
+  },
   methods: {
     checkout_form() {
       this.isActive = !this.isActive;
@@ -263,11 +273,7 @@ export default {
       emailjs.sendForm('service_26j234o', 'template_yqv85dc', this.$refs.form, 'tGrrFjuKCc7u6wh3f')
         .then((result) => {
              console.log('SUCCESS!', result.text);
-            swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
-"success"}).then(function(){ 
-   }
-);
-        }, (error) => {
+            }, (error) => {
             console.log('FAILED...', error.text);
         });
         
