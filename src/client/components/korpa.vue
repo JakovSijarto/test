@@ -45,15 +45,82 @@
   <div class="flex justify-center items-center w-full">
     <div class="flex w-[1350px] justify-between items-center py-[35px] mx-4">
   <div class="text-[#3D3D3D] font-bold uppercase">Sveukupno: {{ formatCurrency(calculateTotalAmount(), 'RSD') }}</div>
-  <button @click="checkout" class="border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold ">Plati Sada</button>
+  <button @click="checkout_form" class="border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold ">Nastavi</button> 
     </div>
   </div>
-<div class="flex justify-center mx-4">
+  <div class="flex w-full" v-if="isActive"
+  >
+    <form ref="form" @submit.prevent="sendEmail" class="flex w-full flex-col justify-center items-center">
+      <div class="flex w-[1350px] justify-between py-4 max-[1380px]:w-full px-2 max-[480px]:flex-col max-[480px]:gap-[1em]">
+        <div class="w-[1350px] flex flex-col max-[1380px]:w-full ">
+          <Label class="pb-2 mulifont text-[19px]">Ime:</Label>
+          <input type="text" class="border w-[90%] h-[50px] pl-2 max-[480px]:w-full" required name="ime" v-model="ime">
+        </div>
+        <div class="w-[1350px] flex flex-col max-[1380px]:w-full">
+          <Label class="pb-2 mulifont text-[19px]">Prezime:</Label>
+          <input type="text" class="border w-[90%] h-[50px] pl-2 max-[480px]:w-full" required name="prezime" v-model="prezime">
+        </div>
+      </div>
+      <div class="flex w-[1350px] justify-between max-[1380px]:w-full px-2 max-[480px]:gap-[1em] max-[480px]:flex-col ">
+        <div class="w-[1350px] flex flex-col max-[1380px]:w-full">
+          <Label class="pb-2 mulifont text-[19px]">Telefon:</Label>
+          <input type="text" class="border w-[90%] h-[50px] pl-2 max-[480px]:w-full" required name="telefon" v-model="telefon">
+        </div>
+        <div class="w-[1350px] flex flex-col pb-4 max-[1380px]:w-full">
+          <Label class="pb-2 mulifont text-[19px]">Mail:</Label>
+          <input type="text" class="border w-[90%] h-[50px] pl-2 max-[480px]:w-full" required name="mail" v-model="mail">
+        </div>
+      </div>
+      <div class="w-[1350px] max-[1380px]:w-full px-2">
+        <div class="pb-2 mulifont text-[19px] pt-4" >*Za tortu (ako imate)</div>
+      <div class="flex justify-between max-[770px]:gap-[1em] max-[480px]:flex-col max-[480px]:gap-[1em]">
+        <select class="mb-[18px] max-[480px]:mb-[5px] h-[46px] bg-[#c4b4a7] border border-[white] py-[6px] px-[22px] text-[15px] w-[50%] text-white rounded-[5px] max-[480px]:w-full" placeholder="" name="velicina_torte" v-model="velicina_torte">
+                <option disabled selected class="pb-2 mulifont text-[19px]">Veličina torte*</option>
+                <option class="pb-2 mulifont text-[19px]">1 kg</option>
+                <option class="pb-2 mulifont text-[19px]">1.5 kg</option>
+                <option class="pb-2 mulifont text-[19px]">2 kg</option>
+                <option class="pb-2 mulifont text-[19px]">2.5 kg</option>
+                <option class="pb-2 mulifont text-[19px]">3 kg</option>
+        </select>
+              <div class="flex items-center justify-center gap-[0.5em] max-[480px]:justify-start max-[480px]:mb-[2em] ">
+                <input type="checkbox" v-model="agreeTerms" @click="handleCheckboxClick" class="bg-[#c4b4a7] h-[20px] w-[20px] rounded-[5px]">
+                <span class="mulifont text-[19px] max-[710px]:text-[14px]">Dodatna Dekoracija za tortu (+300rsd)</span>
+              </div>
+      </div>
+      <div class="" v-if="agreeTerms">
+        <span class="">Opis za dodatnu dekoraciju:</span> 
+        <textarea id="" cols="30" rows="10" class="border w-full max-h-[100px] min-h-[150px] p-2" required name="opis_dekoracije" v-model="opis_dekoracije"></textarea>
+      </div>
+      <div class="flex items-center justify-center gap-[1em] py-8 max-[480px]:pt-4">
+                <input type="checkbox" v-model="agreeTerms2" @click="handleCheckboxClick2" class="bg-[#c4b4a7] h-[20px] w-[20px] rounded-[5px]">
+                <span class="mulifont text-[19px]">Želim preuzeti u prodavnici</span>
+        </div>
+      <div class="flex justify-between w-full max-[480px]:flex-col max-[480px]:gap-[1em]" v-if="!agreeTerms2">
+        <div class="w-[50%] max-[480px]:w-full max-[480px]:text-center">
+          <label for="birthday" class="pb-2 mulifont text-[19px]">Za kada želite naručiti:</label>
+          <input type="date" class="border p-2 ml-4" required name="za_kada" v-model="za_kada">
+      </div>
+      <select class="mb-[18px] h-[46px] bg-[#c4b4a7] border w-[50%] border-[white] py-[6px] px-[22px] text-[15px] text-white rounded-[5px] max-[480px]:w-full" placeholder="" required name="zona_dostave" v-model="zona_dostave">
+                <option disabled selected class="pb-2 mulifont text-[19px]" >Izaberite zonu dostave*</option>
+                <option class="pb-2 mulifont text-[19px]">1. zona (5km) + 500rsd</option>
+                <option class="pb-2 mulifont text-[19px]">2. zona (10km) + 1000rsd</option>
+                <option class="pb-2 mulifont text-[19px]">3. zona (15km) + 1500rsd</option>
+            </select>
+      </div>
+      <div class="flex justify-between py-8 gap-[1em] max-[480px]:flex-col max-[480px]:gap-[1em]">
+        <div class="flex flex-col w-[100%]" v-if="!agreeTerms2">
+          <Label class="mulifont text-[19px]">Adresa:</Label>
+          <input type="text" class="border h-[30px] pl-2" required name="adresa" v-model="adresa">
+        </div>
+        <button @click="checkout" class="border mulifont tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold w-full">Plati Sada</button>
+      </div>
+      </div>
+    </form>
+  </div>
+<div v-else class="flex justify-center mx-4">
   <button @click="router.push({ name:'home' })" class="border mulifont leading-[21px] tracking-[.1em] uppercase py-[13px] px-[47px] bg-[#c4b4a7] text-[white] text-[12px] font-semibold mb-[120px] w-[1350px]">Natrag na početnu</button>
 </div>
-  </div>
-  <div>
-    
+
   </div>
 </template>
 <script setup>
@@ -67,9 +134,10 @@ const cart = ref(store.cart);
 const router = useRouter();
 
   const removeFromCart = (id) => {
-    store.removeFromCart(id)
-  }
+    store.removeFromCart(id);
 
+  }
+  
   const incrementQuantity = (id) => {
   const product = cart.value.find((item) => item.id === id);
 
@@ -114,7 +182,6 @@ let customPrice = 0; // Initialize customPrice
 const loadStripe = async () => {
   try {
     stripe = await stripeLoader(import.meta.env.VITE_APP_STRIPE_KEY_PUBLISHABLE);
-    console.log('Stripe API key:', import.meta.env.VITE_APP_STRIPE_KEY_PUBLISHABLE);
   } catch (error) {
     console.error('Error loading Stripe:', error);
   }
@@ -155,8 +222,59 @@ onMounted(() => {
   // Load Stripe when the component is created
   loadStripe();
 });
-</script>
 
+
+
+</script>
+<script>
+import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
+
+export default {
+  data() {
+    return {
+      isActive: false,
+      agreeTerms: false,
+      agreeTerms2: false,
+      ime:"",
+      prezime:"",
+      telefon:"",
+      mail:"",
+      velicina_torte:"",
+      opis_dekoracije:"",
+      za_kada:"",
+      zona_dostave:"",
+      adresa:""
+    };
+  },
+  methods: {
+    checkout_form() {
+      this.isActive = !this.isActive;
+    },
+    handleCheckboxClick() {
+      // Do something when the checkbox is clicked
+      console.log('Checkbox clicked. Is checked:', this.agreeTerms);
+    },
+    handleCheckboxClick2() {
+      // Do something when the checkbox is clicked
+      console.log('Checkbox clicked. Is checked:', this.agreeTerms2);
+    },
+    sendEmail() {
+      emailjs.sendForm('service_26j234o', 'template_yqv85dc', this.$refs.form, 'tGrrFjuKCc7u6wh3f')
+        .then((result) => {
+             console.log('SUCCESS!', result.text);
+            swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
+"success"}).then(function(){ 
+   }
+);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+        
+    },
+  },
+};
+</script>
 <style scoped>
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
